@@ -53,6 +53,7 @@ Here there is a central script, that will calculate and gather the results obtai
      
 2. main script <br>
    Based on the "configurations" made in the setup folder will execute its tasks:
+   * Unzip the results.zip file in the template/results folder
    * Run the following command:
      ```shellscript
      [your-disk]:[name-path]\template> python script.py
@@ -64,7 +65,7 @@ Here there is a central script, that will calculate and gather the results obtai
      - latex tables for OWASP Benchmark and WAVSEP Benchmark (LATEX_benchmark_apps.txt)
      - latex tables for the other web applications (LATEX_geral_apps.txt)
      
-3. minor scrips  <br>
+4. minor scrips  <br>
    Here will be executed small scripts for generating the latex tables that still missing:
    * Generation of latex tables for individual tools, combinations of 2 and 3 tools not using weights:
      ```shellscript
