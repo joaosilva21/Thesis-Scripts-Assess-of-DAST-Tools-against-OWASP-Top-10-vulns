@@ -1,4 +1,4 @@
-# Thesis_Scripts-Assess-of-DAST-Tools-against-OWASP-Top-10-vulns
+# Thesis-Scripts-Assess-of-DAST-Tools-against-OWASP-Top-10-vulns
 - [x] Finished
 - [ ] Add more modularity to the weights latex table generation
 - [ ] Solve some minor bugs about the name of the tools in some the latex tables generated
