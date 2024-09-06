@@ -86,6 +86,7 @@ Here there is a central script, that will calculate and gather the results obtai
 - The folder resources contains the folders used during the analysis conducted on the thesis
 - After generated, the "WEIGHTS.txt" file should be move to the LATEX/weights_table folder to allow the generation of latex tables for the weights used in combination of 2 tools using weights
 - As already stated, the setup folder allows the configuration of the elements used to conduct the evaluatio here done, if you change them remember you probably must have to change another files, either code or excel. For now this will be left like this, but in the future the goal will be to provide a bit more freedom
+- The docs folder contains a pdf file with all the tables collected from the scripts
 
 
 
