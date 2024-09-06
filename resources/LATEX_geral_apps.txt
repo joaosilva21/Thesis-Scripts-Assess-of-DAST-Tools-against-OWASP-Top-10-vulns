@@ -1,0 +1,1818 @@
+\textbf{\large Results obtained in WebGoat}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 16 & 5 & 0 & 0 & 16 & 0 & 5 & 0 & 16 & 0 & 5 & 0 & 16 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 4 & 12 & 48 & 2 & 2 & 49 & 11 & 0 & 4 & 0 & 60 & 0 & 4 & 0 & 60\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 79 & 100 & 0 & 79 & 0 & 37 & 63 & 24 & 55 & 15 & 85 & 0 & 79 & 0 & 100\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 17 & 9 & 49 & 1 & 16 & 48 & 10 & 0 & 17 & 0 & 58 & 0 & 17 & 0 & 58\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 6 & 5 & 12 & 0 & 6 & 4 & 13 & 0 & 6 & 4 & 13 & 0 & 6 & 0 & 17\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 16 & 3 & 10 & 0 & 16 & 1 & 12 & 0 & 16 & 0 & 13 & 0 & 16 & 0 & 13\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 80 & 54 & 0 & 0 & 80 & 0 & 54 & 0 & 80 & 0 & 54 & 1 & 79 & 0 & 54\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 18 & 2 & 0 & 4 & 14 & 0 & 2 & 1 & 17 & 0 & 2 & 1 & 17 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 5 & 1 & 1 & 2 & 3 & 2 & 0 & 0 & 5 & 0 & 2 & 0 & 5 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 2 & 3 & 0 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 7 & 2 & 0 & 0 & 7 & 0 & 2 & 0 & 7 & 0 & 2 & 0 & 7 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 2 & 1 & 1 & 1 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to WebGoat - Part1}
+\label{table:DAST tools output in relation to WebGoat - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 16 & 5 & 0 & 0 & 16 & 0 & 5 & 1 & 15 & 0 & 5 & 2 & 14 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 4 & 12 & 48 & 0 & 4 & 0 & 60 & 0 & 4 & 2 & 58 & 3 & 1 & 2 & 58\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 79 & 100 & 0 & 3 & 76 & 0 & 100 & 32 & 47 & 12 & 88 & 79 & 0 & 49 & 51\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 17 & 9 & 49 & 1 & 16 & 0 & 58 & 2 & 15 & 3 & 55 & 4 & 13 & 2 & 56\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 6 & 5 & 12 & 0 & 6 & 0 & 17 & 3 & 3 & 4 & 13 & 1 & 5 & 2 & 15\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 16 & 3 & 10 & 1 & 15 & 7 & 6 & 1 & 15 & 2 & 11 & 4 & 12 & 1 & 12\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 80 & 54 & 0 & 0 & 80 & 3 & 51 & 0 & 80 & 0 & 54 & 0 & 80 & 0 & 54\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 18 & 2 & 0 & 3 & 15 & 0 & 2 & 3 & 15 & 0 & 2 & 3 & 15 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 5 & 1 & 1 & 0 & 5 & 0 & 2 & 0 & 5 & 0 & 2 & 2 & 3 & 1 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 2 & 3 & 0 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 7 & 2 & 0 & 3 & 4 & 1 & 1 & 2 & 5 & 1 & 1 & 0 & 7 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 13 & 0 & 0 & 2 & 11 & 0 & 0 & 2 & 11 & 0 & 0 & 0 & 13 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0 & 2 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to WebGoat - Part2}
+\label{table:DAST tools output in relation to WebGoat - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in Juice Shop}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 25 & 10 & 0 & 0 & 25 & 0 & 10 & 0 & 25 & 0 & 10 & 0 & 25 & 0 & 10\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 5 & 5 & 0 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 21 & 8 & 0 & 1 & 20 & 0 & 8 & 0 & 21 & 0 & 8 & 0 & 21 & 0 & 8\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 2 & 1 & 11 & 2 & 0 & 11 & 1 & 0 & 2 & 0 & 12 & 0 & 2 & 0 & 12\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 6 & 3 & 13 & 1 & 5 & 10 & 6 & 0 & 6 & 0 & 16 & 0 & 6 & 0 & 16\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 6 & 1 & 1 & 1 & 5 & 0 & 2 & 1 & 5 & 0 & 2 & 0 & 6 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 4 & 24 & 0 & 0 & 4 & 0 & 24 & 0 & 4 & 0 & 24 & 0 & 4 & 0 & 24\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 5 & 0 & 0 & 1 & 0 & 5 & 0 & 1 & 0 & 5 & 0 & 1 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 11 & 1 & 0 & 2 & 9 & 0 & 1 & 2 & 9 & 0 & 1 & 0 & 11 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 1 & 2 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 2 & 1 & 0 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 1 & 2 & 0 & 1 & 0 & 0 & 2 & 1 & 0 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+
+\caption{DAST tools output in relation to Juice Shop - Part1}
+\label{table:DAST tools output in relation to Juice Shop - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 25 & 10 & 0 & 0 & 25 & 0 & 10 & 1 & 24 & 1 & 9 & 3 & 22 & 2 & 8\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 5 & 5 & 0 & 0 & 5 & 0 & 5 & 0 & 5 & 0 & 5 & 1 & 4 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 21 & 8 & 0 & 0 & 21 & 0 & 8 & 0 & 21 & 2 & 6 & 3 & 18 & 1 & 7\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 2 & 1 & 11 & 0 & 2 & 0 & 12 & 0 & 2 & 0 & 12 & 2 & 0 & 5 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 6 & 3 & 13 & 0 & 6 & 0 & 16 & 1 & 5 & 0 & 16 & 0 & 6 & 3 & 13\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 6 & 1 & 1 & 0 & 6 & 0 & 2 & 1 & 5 & 0 & 2 & 0 & 6 & 1 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 4 & 24 & 0 & 0 & 4 & 0 & 24 & 0 & 4 & 0 & 24 & 0 & 4 & 0 & 24\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 5 & 0 & 0 & 1 & 0 & 5 & 0 & 1 & 0 & 5 & 0 & 1 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 11 & 1 & 0 & 0 & 11 & 0 & 1 & 0 & 11 & 0 & 1 & 3 & 8 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0 & 0 & 13 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 2 & 1 & 0 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 1 & 0 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+
+\caption{DAST tools output in relation to Juice Shop - Part2}
+\label{table:DAST tools output in relation to Juice Shop - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in Mutillidae II}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 20 & 0 & 14 & 1 & 19 & 0 & 14 & 1 & 19 & 14 & 0 & 0 & 20 & 0 & 14\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 6 & 0 & 0 & 3 & 3 & 0 & 0 & 3 & 3 & 0 & 0 & 1 & 5 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 55 & 2 & 0 & 55 & 0 & 2 & 0 & 42 & 13 & 0 & 2 & 0 & 55 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 3 & 1 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 17 & 0 & 21 & 6 & 11 & 15 & 6 & 4 & 13 & 4 & 17 & 2 & 15 & 0 & 21\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 45 & 5 & 36 & 23 & 22 & 27 & 14 & 22 & 23 & 9 & 32 & 1 & 44 & 0 & 41\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 2 & 0 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 37 & 4 & 71 & 12 & 25 & 66 & 9 & 0 & 37 & 0 & 75 & 0 & 37 & 0 & 75\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 21 & 15 & 0 & 0 & 21 & 0 & 15 & 0 & 21 & 0 & 15 & 0 & 21 & 0 & 15\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 74 & 1 & 2 & 23 & 51 & 3 & 0 & 6 & 68 & 0 & 3 & 0 & 74 & 0 & 3\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 13 & 3 & 0 & 8 & 5 & 0 & 3 & 3 & 10 & 0 & 3 & 2 & 11 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 4 & 0 & 0 & 2 & 2 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 3 & 3 & 0 & 2 & 1 & 3 & 0 & 0 & 3 & 0 & 3 & 0 & 3 & 0 & 3\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 4 & 0 & 0 & 2 & 2 & 0 & 0 & 2 & 2 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Mutillidae II - Part1}
+\label{table:DAST tools output in relation to Mutillidae II - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 20 & 0 & 14 & 1 & 19 & 0 & 14 & 0 & 20 & 0 & 14 & 0 & 20 & 7 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 6 & 0 & 0 & 0 & 6 & 0 & 0 & 0 & 6 & 0 & 0 & 2 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 55 & 2 & 0 & 0 & 55 & 1 & 1 & 21 & 34 & 0 & 2 & 55 & 0 & 2 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 2 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 17 & 0 & 21 & 7 & 10 & 3 & 18 & 4 & 13 & 0 & 21 & 7 & 10 & 7 & 14\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 45 & 5 & 36 & 0 & 45 & 0 & 41 & 2 & 43 & 1 & 40 & 25 & 20 & 3 & 38\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 37 & 4 & 71 & 26 & 11 & 7 & 68 & 6 & 31 & 0 & 75 & 14 & 23 & 33 & 42\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 21 & 15 & 0 & 0 & 21 & 6 & 9 & 0 & 21 & 0 & 15 & 0 & 21 & 0 & 15\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 74 & 1 & 2 & 0 & 74 & 0 & 3 & 0 & 74 & 0 & 3 & 30 & 44 & 0 & 3\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 13 & 3 & 0 & 1 & 12 & 0 & 3 & 2 & 11 & 0 & 3 & 8 & 5 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 3 & 3 & 0 & 0 & 3 & 0 & 3 & 0 & 3 & 1 & 2 & 3 & 0 & 2 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Mutillidae II - Part2}
+\label{table:DAST tools output in relation to Mutillidae II - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in Altoro Mutual}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 3 & 2 & 0 & 1 & 2 & 0 & 2 & 0 & 3 & 0 & 2 & 1 & 2 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 1 & 0 & 3 & 0 & 1 & 3 & 0 & 0 & 1 & 0 & 3 & 1 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 7 & 23 & 0 & 7 & 0 & 23 & 0 & 4 & 3 & 10 & 13 & 0 & 7 & 0 & 23\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 5 & 9 & 3 & 3 & 2 & 1 & 11 & 2 & 3 & 1 & 11 & 0 & 5 & 0 & 12\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 5 & 4 & 51 & 5 & 0 & 51 & 4 & 2 & 3 & 3 & 52 & 2 & 3 & 2 & 53\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 5 & 0 & 7 & 0 & 5 & 1 & 6 & 0 & 5 & 0 & 7 & 0 & 5 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 10 & 7 & 0 & 0 & 10 & 0 & 7 & 0 & 10 & 0 & 7 & 1 & 9 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 3 & 0 & 0 & 2 & 1 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 7 & 1 & 0 & 3 & 4 & 0 & 1 & 0 & 7 & 0 & 1 & 0 & 7 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 11 & 0 & 0 & 0 & 11 & 0 & 0 & 0 & 11 & 0 & 0 & 0 & 11 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 1 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Altoro Mutual - Part1}
+\label{table:DAST tools output in relation to Altoro Mutual - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 2 & 1 & 0 & 2 & 2 & 1 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 1 & 0 & 3 & 1 & 0 & 0 & 3 & 0 & 1 & 0 & 3 & 1 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 7 & 23 & 0 & 3 & 4 & 0 & 23 & 2 & 5 & 19 & 4 & 7 & 0 & 23 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 5 & 9 & 3 & 1 & 4 & 0 & 12 & 2 & 3 & 3 & 9 & 3 & 2 & 6 & 6\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 5 & 4 & 51 & 1 & 4 & 0 & 55 & 1 & 4 & 2 & 53 & 4 & 1 & 19 & 36\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 1 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 5 & 0 & 7 & 1 & 4 & 6 & 1 & 0 & 5 & 2 & 5 & 2 & 3 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 10 & 7 & 0 & 0 & 10 & 1 & 6 & 0 & 10 & 0 & 7 & 0 & 10 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 2 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 7 & 1 & 0 & 0 & 7 & 0 & 1 & 1 & 6 & 0 & 1 & 3 & 4 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 11 & 0 & 0 & 0 & 11 & 0 & 0 & 0 & 11 & 0 & 0 & 0 & 11 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Altoro Mutual - Part2}
+\label{table:DAST tools output in relation to Altoro Mutual - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in bWAPP}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 5 & 0 & 3 & 2 & 3 & 1 & 2 & 1 & 4 & 1 & 2 & 1 & 4 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 2 & 2 & 0 & 0 & 1 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 92 & 0 & 0 & 92 & 0 & 0 & 0 & 67 & 25 & 0 & 0 & 0 & 92 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 1 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 15 & 1 & 6 & 0 & 15 & 0 & 7 & 0 & 15 & 0 & 7 & 5 & 10 & 6 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 15 & 1 & 52 & 8 & 7 & 45 & 8 & 7 & 8 & 4 & 49 & 3 & 12 & 4 & 49\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 2 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 4 & 0 & 45 & 1 & 3 & 12 & 33 & 0 & 4 & 0 & 45 & 1 & 3 & 0 & 45\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 26 & 44 & 0 & 0 & 26 & 0 & 44 & 0 & 26 & 0 & 44 & 0 & 26 & 2 & 42\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 8 & 0 & 1 & 4 & 4 & 0 & 1 & 0 & 8 & 1 & 0 & 0 & 8 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 17 & 3 & 0 & 7 & 10 & 0 & 3 & 1 & 16 & 0 & 3 & 4 & 13 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 7 & 0 & 0 & 1 & 6 & 0 & 0 & 1 & 6 & 0 & 0 & 0 & 7 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 3 & 2 & 0 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 5 & 0 & 0 & 3 & 2 & 0 & 0 & 3 & 2 & 0 & 0 & 0 & 5 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 13 & 1 & 0 & 10 & 3 & 1 & 0 & 5 & 8 & 0 & 1 & 8 & 5 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to bWAPP - Part1}
+\label{table:DAST tools output in relation to bWAPP - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 5 & 0 & 3 & 0 & 5 & 1 & 2 & 1 & 4 & 0 & 3 & 2 & 3 & 1 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 1 & 3 & 0 & 0 & 1 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 92 & 0 & 0 & 32 & 60 & 0 & 0 & 42 & 50 & 0 & 0 & 92 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 15 & 1 & 6 & 0 & 15 & 0 & 7 & 4 & 11 & 0 & 7 & 2 & 13 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 15 & 1 & 52 & 2 & 13 & 0 & 53 & 2 & 13 & 0 & 53 & 9 & 6 & 16 & 37\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 4 & 0 & 45 & 4 & 0 & 36 & 9 & 0 & 4 & 0 & 45 & 2 & 2 & 4 & 41\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 26 & 44 & 0 & 0 & 26 & 4 & 40 & 0 & 26 & 0 & 44 & 0 & 26 & 0 & 44\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 8 & 0 & 1 & 0 & 8 & 0 & 1 & 0 & 8 & 0 & 1 & 2 & 6 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 17 & 3 & 0 & 1 & 16 & 0 & 3 & 2 & 15 & 0 & 3 & 5 & 12 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 7 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 7 & 0 & 0 & 0 & 7 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 3 & 2 & 0 & 3 & 0 & 2 & 0 & 1 & 2 & 1 & 1 & 0 & 3 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 5 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 13 & 1 & 0 & 6 & 7 & 0 & 1 & 3 & 10 & 0 & 1 & 10 & 3 & 1 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to bWAPP - Part2}
+\label{table:DAST tools output in relation to bWAPP - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in Piwigo}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 2 & 12 & 0 & 0 & 12 & 2 & 0 & 0 & 1 & 13 & 0 & 0 & 0 & 14\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 6 & 34 & 0 & 6 & 0 & 25 & 9 & 6 & 0 & 15 & 19 & 0 & 6 & 0 & 34\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 10 & 92 & 17 & 0 & 10 & 13 & 96 & 0 & 10 & 3 & 106 & 0 & 10 & 1 & 108\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 7 & 19 & 56 & 0 & 7 & 18 & 57 & 0 & 7 & 21 & 54 & 0 & 7 & 13 & 62\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 6 & 11 & 0 & 4 & 2 & 11 & 0 & 0 & 6 & 0 & 11 & 0 & 6 & 0 & 11\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 12 & 41 & 1 & 0 & 12 & 0 & 42 & 0 & 12 & 0 & 42 & 0 & 12 & 0 & 42\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 4 & 0 & 5 & 3 & 1 & 5 & 0 & 0 & 4 & 0 & 5 & 0 & 4 & 0 & 5\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 30 & 2 & 0 & 1 & 29 & 0 & 2 & 0 & 30 & 0 & 2 & 1 & 29 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 8 & 0 & 0 & 0 & 8 & 0 & 0 & 4 & 4 & 0 & 0 & 0 & 8 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Piwigo - Part1}
+\label{table:DAST tools output in relation to Piwigo - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 2 & 12 & 0 & 0 & 0 & 14 & 0 & 0 & 0 & 14 & 0 & 0 & 2 & 12\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 6 & 34 & 0 & 6 & 0 & 0 & 34 & 4 & 2 & 10 & 24 & 6 & 0 & 29 & 5\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 10 & 92 & 17 & 0 & 10 & 2 & 107 & 1 & 9 & 11 & 98 & 4 & 6 & 3 & 106\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 7 & 19 & 56 & 0 & 7 & 6 & 69 & 0 & 7 & 1 & 74 & 3 & 4 & 13 & 62\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 6 & 11 & 0 & 4 & 2 & 1 & 10 & 0 & 6 & 0 & 11 & 6 & 0 & 11 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 12 & 41 & 1 & 0 & 12 & 2 & 40 & 0 & 12 & 0 & 42 & 0 & 12 & 0 & 42\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 4 & 0 & 5 & 0 & 4 & 0 & 5 & 0 & 4 & 0 & 5 & 2 & 2 & 0 & 5\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 30 & 2 & 0 & 0 & 30 & 0 & 2 & 2 & 28 & 0 & 2 & 3 & 27 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 8 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Piwigo - Part2}
+\label{table:DAST tools output in relation to Piwigo - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in Shopizer}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 0 & 4 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 26 & 6 & 0 & 0 & 26 & 0 & 6 & 13 & 13 & 2 & 4 & 0 & 26 & 0 & 6\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 0 & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 1 & 2 & 0 & 0 & 2 & 1 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 97 & 92 & 0 & 0 & 97 & 0 & 92 & 0 & 97 & 0 & 92 & 0 & 97 & 0 & 92\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 0 & 18 & 1 & 0 & 0 & 2 & 17 & 0 & 0 & 0 & 19 & 0 & 0 & 0 & 19\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Shopizer - Part1}
+\label{table:DAST tools output in relation to Shopizer - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 1 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 26 & 6 & 0 & 1 & 25 & 0 & 6 & 17 & 9 & 5 & 1 & 26 & 0 & 6 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 2 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 1 & 2 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 97 & 92 & 0 & 0 & 97 & 0 & 92 & 0 & 97 & 0 & 92 & 0 & 97 & 0 & 92\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 2 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 0 & 18 & 1 & 0 & 0 & 0 & 19 & 0 & 0 & 0 & 19 & 0 & 0 & 2 & 17\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 1 & 3 & 0 & 0 & 0 & 4 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\caption{DAST tools output in relation to Shopizer - Part2}
+\label{table:DAST tools output in relation to Shopizer - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in phpbb}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 3 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 2 & 3 & 0 & 0 & 0 & 5 & 0 & 0 & 3 & 2 & 0 & 0 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 20 & 7 & 0 & 20 & 0 & 7 & 0 & 3 & 17 & 0 & 7 & 0 & 20 & 0 & 7\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 0 & 57 & 0 & 0 & 46 & 11 & 0 & 0 & 15 & 42 & 0 & 0 & 0 & 57\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 4\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 0 & 4 & 38 & 0 & 0 & 0 & 42 & 0 & 0 & 37 & 5 & 0 & 0 & 0 & 42\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 7 & 22 & 0 & 0 & 7 & 0 & 22 & 0 & 7 & 0 & 22 & 0 & 7 & 1 & 21\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 6 & 6 & 0 & 3 & 3 & 0 & 6 & 0 & 6 & 0 & 6 & 0 & 6 & 0 & 6\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 3 & 0 & 0 & 2 & 1 & 0 & 0 & 2 & 1 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+\hline
+
+\caption{DAST tools output in relation to phpbb - Part1}
+\label{table:DAST tools output in relation to phpbb - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 3 & 0 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 1 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 0 & 2 & 3 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 20 & 7 & 0 & 3 & 17 & 0 & 7 & 9 & 11 & 2 & 5 & 20 & 0 & 7 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 0 & 57 & 0 & 0 & 0 & 57 & 0 & 0 & 0 & 57 & 0 & 0 & 9 & 48\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 4\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 0 & 4 & 38 & 0 & 0 & 0 & 42 & 0 & 0 & 5 & 37 & 0 & 0 & 3 & 39\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0 & 3 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 7 & 22 & 0 & 0 & 7 & 1 & 21 & 0 & 7 & 0 & 22 & 0 & 7 & 0 & 22\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 6 & 6 & 0 & 0 & 6 & 0 & 6 & 2 & 4 & 0 & 6 & 3 & 3 & 0 & 6\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 3 & 0 & 0 & 1 & 2 & 0 & 0 & 0 & 3 & 0 & 0 & 0 & 3 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 1 & 1 & 0 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1\\
+\hline
+
+\caption{DAST tools output in relation to phpbb - Part2}
+\label{table:DAST tools output in relation to phpbb - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+
+\textbf{\large Results obtained in WordPress}\newline
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{OWASP ZAP} & \multicolumn{4}{c|}{BurpSuite} & \multicolumn{4}{c|}{Iron Wasp}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 5 & 9 & 0 & 0 & 0 & 14 & 0 & 0 & 9 & 5 & 0 & 0 & 0 & 14\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 0 & 40 & 0 & 0 & 0 & 25 & 15 & 0 & 0 & 13 & 27 & 0 & 0 & 0 & 40\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 2 & 23 & 0 & 0 & 19 & 6 & 0 & 0 & 1 & 24 & 0 & 0 & 3 & 22\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 1 & 14 & 42 & 0 & 1 & 0 & 56 & 0 & 1 & 42 & 14 & 0 & 1 & 0 & 56\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 0 & 12 & 0 & 0 & 2 & 10 & 0 & 0 & 0 & 12 & 0 & 0 & 0 & 12\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 10 & 14 & 2 & 0 & 10 & 0 & 16 & 0 & 10 & 0 & 16 & 1 & 9 & 0 & 16\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 13 & 7 & 0 & 5 & 8 & 0 & 7 & 0 & 13 & 0 & 7 & 0 & 13 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 5 & 0 & 0 & 1 & 4 & 0 & 0 & 2 & 3 & 0 & 0 & 0 & 5 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 8 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+
+\caption{DAST tools output in relation to WordPress - Part1}
+\label{table:DAST tools output in relation to WordPress - Part1}
+\end{longtable}
+\end{tiny}
+
+
+
+\begin{tiny}
+\captionsetup{font=footnotesize}
+\centering
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{*{1}{|wc{0.1in}|m{1.55in}|} *{3}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|} *{4}{>{\columncolor{anti-flashwhite}}wc{0.35cm}|} *{4}{wc{0.35cm}|}}
+\hline
+\rowcolor{lightgray}\multicolumn{5}{|c|}{Vulnerability} & \multicolumn{12}{c|}{Tools} \\
+\hline
+\rowcolor{lightgray} ID & \multicolumn{1}{c}{Name} &  \multicolumn{3}{|c|}{Total} & \multicolumn{4}{c|}{Acunetix} & \multicolumn{4}{c|}{Wapiti} & \multicolumn{4}{c|}{OWASP ZAP Plugins}\\
+\hline
+\rowcolor{lightlightgray} A1 & Broken Access Control & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authorization} & 0 & 5 & 9 & 0 & 0 & 0 & 14 & 0 & 0 & 0 & 14 & 0 & 0 & 0 & 14\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Path Traversal} & 1 & 2 & 0 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 2\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Remote File Inclusion} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Request Forgery} & 0 & 40 & 0 & 0 & 0 & 8 & 32 & 0 & 0 & 3 & 37 & 0 & 0 & 25 & 15\\
+\hline
+
+\rowcolor{lightlightgray} A2 & Cryptographic Failure & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Transmission of Information in Cleartext} & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Untrusted/Invalid TLS Certificate} & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+
+\rowcolor{lightlightgray} A3 & Injection & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{OS Command Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{SQL Injection} & 0 & 2 & 23 & 0 & 0 & 0 & 25 & 0 & 0 & 0 & 25 & 0 & 0 & 4 & 21\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{LDAP Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Cross-Site Scripting} & 1 & 14 & 42 & 0 & 1 & 0 & 56 & 0 & 1 & 0 & 56 & 0 & 1 & 7 & 49\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XPath Injection} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{HTTP Response Splitting} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A4 & Insecure Design & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Exposed Improper Error Handling} & 0 & 0 & 12 & 0 & 0 & 8 & 4 & 0 & 0 & 0 & 12 & 0 & 0 & 2 & 10\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Security Design of Form Fields} & 10 & 14 & 2 & 0 & 10 & 3 & 13 & 0 & 10 & 0 & 16 & 0 & 10 & 0 & 16\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Method Tampering} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A5 & Security Misconfiguration & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{XML External Entities} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bad Programming of Cookies} & 13 & 7 & 0 & 0 & 13 & 0 & 7 & 3 & 10 & 0 & 7 & 0 & 13 & 0 & 7\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Use of Hard Coded Constants} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A6 & Vulnerable and Outdated Components & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure/Vulnerable Third-Party Software} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A7 & Identification and Authentication Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Bypassing Authentication} & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Brute Force Attacks} & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 2 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Session Fixation} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+\hline
+
+\rowcolor{lightlightgray} A8 & Software and Data Integrity Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Scope of Cookies} & 5 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 0 & 0 & 0 & 5 & 0 & 0\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Insecure Deserialization} & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+
+\rowcolor{lightlightgray} A9 & Security Logging and Monitoring Failures & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Improper Output Neutralization for Logs} & 0 & 8 & 0 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8 & 0 & 0 & 0 & 8\\
+\hline
+
+\rowcolor{lightlightgray} A10 & Server-Side Request Forgery & P & N & FPFP & TP & FN & FP & TN & TP & FN & FP & TN & TP & FN & FP & TN\\
+\hline
+\multicolumn{2}{|m{1.7in}|}{Server-Side Request Forgery} & 0 & 2 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 2\\
+\hline
+
+\caption{DAST tools output in relation to WordPress - Part2}
+\label{table:DAST tools output in relation to WordPress - Part2}
+\end{longtable}
+\end{tiny}
+
+
+\newpage
+
+

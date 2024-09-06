@@ -1,0 +1,14 @@
+pathtraver#Path Traversal
+cmdi#Command Injection
+sqli#SQL Injection
+ldapi#LDAP Injection
+xss#XSS
+xpathi#XPath Injection
+DOM-XSS#XSS
+LFI#SSRF
+OS-Command-Injection#Command Injection
+Reflected-XSS#XSS
+RFI#Remote File Inclusion
+SQL-Injection#SQL Injection
+Unvalidated-Redirect#Bypass Authorization
+XXE#XXE

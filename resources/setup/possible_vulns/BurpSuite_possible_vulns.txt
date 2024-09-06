@@ -1,0 +1,20 @@
+OS command injection#Command Injection
+Out-of-band resource load (HTTP)#Remote File Inclusion
+File path manipulation#Path Traversal
+Cross-site scripting (reflected)#XSS
+External service interaction (HTTP)#Remote File Inclusion
+SQL injection#SQL Injection
+File path traversal#Path Traversal
+JavaScript injection (reflected DOM-based)#XSS
+Link manipulation (reflected)#XSS
+Form action hijacking#XSS
+Open redirection (reflected)#Bypass Authorization
+Open redirection (DOM-based)#Bypass Authorization
+Open redirection (reflected DOM-based)#Bypass Authorization
+Input returned in response (reflected)#XSS
+Suspicious input transformation (reflected)#XSS
+LDAP injection#LDAP Injection
+Cross-site request forgery#CSRF
+Vulnerable JavaScript dependency#Vulnerable Outdated Component
+TLS cookie without secure flag#Bad Programming of Cookies
+Cookie without HttpOnly flag set#Bad Programming of Cookies

@@ -1,0 +1,218 @@
+\begin{scriptsize}
+\centering
+\begin{longtable}{|>{\columncolor{lightlightgray}}wc{0.6in} | *{4}{wc{0.85cm}|}  >{\columncolor{lightlightgray}}wc{0.6in} | *{4}{wc{0.85cm}|} m{}}
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Bypassing Authorization} & Vulnerability & \multicolumn{5}{c|}{Path Traversal}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1429 & 0.1429 & 0.1429 & 0.1529 & OWASP ZAP & 0.1279 & 0.1429 & 0.1429 & 0.1279\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1279 & Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1379 & Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1329\\
+\hline
+Acunetix & 0.1279 & 0.1279 & 0.1279 & 0.1329 & Acunetix & 0.1429 & 0.1279 & 0.1279 & 0.1529\\
+\hline
+Wapiti & 0.1529 & 0.1479 & 0.1479 & 0.1479 & Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1429\\
+\hline
+OZ Plugins & 0.1479 & 0.1529 & 0.1529 & 0.1429 & OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1479\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Remote File Inclusion} & Vulnerability & \multicolumn{5}{c|}{Cross-Site Request Forgery}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1529 & OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1479\\
+\hline
+Burp Suite & 0.1529 & 0.1529 & 0.1529 & 0.1479 & Burp Suite & 0.1429 & 0.1429 & 0.1429 & 0.1379\\
+\hline
+Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1404 & Iron Wasp & 0.1279 & 0.1279 & 0.1279 & 0.1279\\
+\hline
+Acunetix & 0.1429 & 0.1429 & 0.1429 & 0.1279 & Acunetix & 0.1329 & 0.1329 & 0.1329 & 0.1429\\
+\hline
+Wapiti & 0.1329 & 0.1329 & 0.1329 & 0.1329 & Wapiti & 0.1379 & 0.1379 & 0.1379 & 0.1329\\
+\hline
+OZ Plugins & 0.1329 & 0.1329 & 0.1329 & 0.1404 & OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1529\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Transmission of Information in Cleartext} & Vulnerability & \multicolumn{5}{c|}{Untrusted/Invalid TLS certificate}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1304 & 0.1304 & 0.1304 & 0.1304 & OWASP ZAP & 0.1354 & 0.1354 & 0.1354 & 0.1354\\
+\hline
+Burp Suite & 0.1529 & 0.1529 & 0.1529 & 0.1454 & Burp Suite & 0.1504 & 0.1504 & 0.1504 & 0.1504\\
+\hline
+Iron Wasp & 0.1479 & 0.1479 & 0.1479 & 0.1454 & Iron Wasp & 0.1354 & 0.1354 & 0.1354 & 0.1354\\
+\hline
+Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1454 & Acunetix & 0.1354 & 0.1354 & 0.1354 & 0.1354\\
+\hline
+Wapiti & 0.1404 & 0.1404 & 0.1404 & 0.1454 & Wapiti & 0.1504 & 0.1504 & 0.1504 & 0.1504\\
+\hline
+OZ Plugins & 0.1304 & 0.1304 & 0.1304 & 0.1304 & OZ Plugins & 0.1354 & 0.1354 & 0.1354 & 0.1354\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Command Injection} & Vulnerability & \multicolumn{5}{c|}{SQL Injection}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1529 & OWASP ZAP & 0.1429 & 0.1429 & 0.1429 & 0.1379\\
+\hline
+Burp Suite & 0.1379 & 0.1329 & 0.1329 & 0.1429 & Burp Suite & 0.1279 & 0.1279 & 0.1279 & 0.1279\\
+\hline
+Iron Wasp & 0.1429 & 0.1429 & 0.1429 & 0.1479 & Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1479\\
+\hline
+Acunetix & 0.1279 & 0.1279 & 0.1279 & 0.1279 & Acunetix & 0.1379 & 0.1379 & 0.1379 & 0.1529\\
+\hline
+Wapiti & 0.1529 & 0.1479 & 0.1479 & 0.1479 & Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1429\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1379 & OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1329\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{LDAP Injection} & Vulnerability & \multicolumn{5}{c|}{Cross-Site Scripting}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1354 & 0.1354 & 0.1354 & 0.1379 & OWASP ZAP & 0.1529 & 0.1529 & 0.1479 & 0.1379\\
+\hline
+Burp Suite & 0.1354 & 0.1354 & 0.1354 & 0.1279 & Burp Suite & 0.1429 & 0.1379 & 0.1329 & 0.1279\\
+\hline
+Iron Wasp & 0.1354 & 0.1354 & 0.1354 & 0.1379 & Iron Wasp & 0.1329 & 0.1329 & 0.1379 & 0.1529\\
+\hline
+Acunetix & 0.1529 & 0.1529 & 0.1529 & 0.1529 & Acunetix & 0.1379 & 0.1429 & 0.1429 & 0.1479\\
+\hline
+Wapiti & 0.1354 & 0.1354 & 0.1354 & 0.1379 & Wapiti & 0.1279 & 0.1279 & 0.1279 & 0.1329\\
+\hline
+OZ Plugins & 0.1479 & 0.1479 & 0.1479 & 0.1479 & OZ Plugins & 0.1479 & 0.1479 & 0.1529 & 0.1429\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{XPath Injection} & Vulnerability & \multicolumn{5}{c|}{HTTP Response Splitting}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1304 & 0.1304 & 0.1304 & 0.1304 & OWASP ZAP & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1429 & Burp Suite & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Iron Wasp & 0.1429 & 0.1429 & 0.1429 & 0.1529 & Iron Wasp & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Acunetix & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1479 & Wapiti & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1379 & OZ Plugins & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Exposed Improper Error Handling} & Vulnerability & \multicolumn{5}{c|}{Bad Security Design of Form Fields}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1429 & 0.1429 & 0.1429 & 0.1279 & OWASP ZAP & 0.1379 & 0.1379 & 0.1379 & 0.1404\\
+\hline
+Burp Suite & 0.1304 & 0.1304 & 0.1304 & 0.1504 & Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1404\\
+\hline
+Iron Wasp & 0.1304 & 0.1304 & 0.1304 & 0.1504 & Iron Wasp & 0.1529 & 0.1529 & 0.1529 & 0.1529\\
+\hline
+Acunetix & 0.1529 & 0.1529 & 0.1529 & 0.1379 & Acunetix & 0.1379 & 0.1379 & 0.1379 & 0.1279\\
+\hline
+Wapiti & 0.1379 & 0.1379 & 0.1379 & 0.1429 & Wapiti & 0.1379 & 0.1379 & 0.1379 & 0.1404\\
+\hline
+OZ Plugins & 0.1479 & 0.1479 & 0.1479 & 0.1329 & OZ Plugins & 0.1379 & 0.1379 & 0.1379 & 0.1404\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Method Tampering} & Vulnerability & \multicolumn{5}{c|}{XML External Entities}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1379 & OWASP ZAP & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1279 & Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Iron Wasp & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Iron Wasp & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Acunetix & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Acunetix & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Wapiti & 0.1379 & 0.1379 & 0.1379 & 0.1479 & Wapiti & 0.1529 & 0.1529 & 0.1529 & 0.1529\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1529 & OZ Plugins & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Bad Programming of Cookies} & Vulnerability & \multicolumn{5}{c|}{Insecure Use of Hard Coded Constants}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1304 & 0.1304 & 0.1304 & 0.1304 & OWASP ZAP & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1429 & Burp Suite & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Iron Wasp & 0.1429 & 0.1429 & 0.1429 & 0.1529 & Iron Wasp & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Acunetix & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1479 & Wapiti & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1379 & OZ Plugins & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Insecure/Vulnerable Third-Party Software} & Vulnerability & \multicolumn{5}{c|}{Bypassing Authentication}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1529 & 0.1529 & 0.1529 & 0.1379 & OWASP ZAP & 0.1454 & 0.1454 & 0.1454 & 0.1454\\
+\hline
+Burp Suite & 0.1404 & 0.1404 & 0.1404 & 0.1504 & Burp Suite & 0.1454 & 0.1454 & 0.1454 & 0.1454\\
+\hline
+Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1379 & Iron Wasp & 0.1329 & 0.1329 & 0.1329 & 0.1329\\
+\hline
+Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1504 & Acunetix & 0.1329 & 0.1329 & 0.1329 & 0.1329\\
+\hline
+Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1429 & Wapiti & 0.1329 & 0.1329 & 0.1329 & 0.1329\\
+\hline
+OZ Plugins & 0.1329 & 0.1329 & 0.1329 & 0.1404 & OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1529\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Brute Force Attacks} & Vulnerability & \multicolumn{5}{c|}{Session Fixation}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1379 & OWASP ZAP & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1279 & Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Iron Wasp & 0.1304 & 0.1304 & 0.1304 & 0.1504 & Iron Wasp & 0.1529 & 0.1529 & 0.1529 & 0.1529\\
+\hline
+Acunetix & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Acunetix & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+Wapiti & 0.1479 & 0.1529 & 0.1479 & 0.1529 & Wapiti & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1529 & OZ Plugins & 0.1379 & 0.1379 & 0.1379 & 0.1379\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Insecure Scope of Cookies} & Vulnerability & \multicolumn{5}{c|}{Insecure Deserialization}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1304 & 0.1304 & 0.1304 & 0.1304 & OWASP ZAP & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Burp Suite & 0.1379 & 0.1379 & 0.1379 & 0.1429 & Burp Suite & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Iron Wasp & 0.1429 & 0.1429 & 0.1429 & 0.1529 & Iron Wasp & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Acunetix & 0.1304 & 0.1304 & 0.1304 & 0.1304 & Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+Wapiti & 0.1479 & 0.1479 & 0.1479 & 0.1479 & Wapiti & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1379 & OZ Plugins & 0.1404 & 0.1404 & 0.1404 & 0.1404\\
+\hline
+\rowcolor{lightlightgray} Vulnerability & \multicolumn{4}{c|}{Improper Output Neutralization for Logs} & Vulnerability & \multicolumn{5}{c|}{Server-Side Request Forgery}\\
+\hline
+\rowcolor{lightlightgray} Tool & 1 & 2 & 3 & 4 & Tool & 1 & 2 & 3 & 4\\
+\hline
+OWASP ZAP & 0.1479 & 0.1479 & 0.1479 & 0.1279 & OWASP ZAP & 0.1329 & 0.1429 & 0.1379 & 0.1329\\
+\hline
+Burp Suite & 0.1329 & 0.1329 & 0.1329 & 0.1429 & Burp Suite & 0.1479 & 0.1479 & 0.1479 & 0.1379\\
+\hline
+Iron Wasp & 0.1404 & 0.1404 & 0.1404 & 0.1504 & Iron Wasp & 0.1429 & 0.1379 & 0.1429 & 0.1529\\
+\hline
+Acunetix & 0.1404 & 0.1404 & 0.1404 & 0.1504 & Acunetix & 0.1529 & 0.1529 & 0.1529 & 0.1429\\
+\hline
+Wapiti & 0.1279 & 0.1279 & 0.1279 & 0.1379 & Wapiti & 0.1379 & 0.1329 & 0.1329 & 0.1479\\
+\hline
+OZ Plugins & 0.1529 & 0.1529 & 0.1529 & 0.1329 & OZ Plugins & 0.1279 & 0.1279 & 0.1279 & 0.1279\\
+\hline
+\rowcolor{lightlightgray} \multicolumn{10}{|c|}{1 - Business Critical | 2 - Heightened Critical | 3 - Best Effort | 4 - Minimum Effort}\\
+\hline
+\caption{Weights of each tool for each scenario regarding all the vulnerabilities}
+\label{tab:Weights of each tool for each scenario regarding all the vulnerabilities}
+\end{longtable}
+\end{scriptsize}

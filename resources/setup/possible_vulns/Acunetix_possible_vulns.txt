@@ -1,0 +1,9 @@
+Blind SQL Injection#SQL Injection
+Cross site scripting (verified)#XSS
+LDAP injection#LDAP Injection
+SQL injection#SQL Injection
+Cross site scripting#XSS
+Directory traversal#Remote File Inclusion
+File inclusion#Path Traversal
+HTML form without CSRF protection#CSRF
+Cookie without HttpOnly flag set#Bad Programming of Cookies

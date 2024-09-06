@@ -1,0 +1,9 @@
+Command Injection Found#Command Injection
+Cross-site Scripting Detected#XSS
+SQL Injection Detected#SQL Injection
+Local File Include Found#Path Traversal
+Server Side Request Forgery Found#SSRF
+Scriptless HTML Injection#XSS
+Open Redirect Found#Bypass Authorization
+Possible Open Redirect#Bypass Authorization
+ missing the HttpOnly flag#Bad Programming of Cookies

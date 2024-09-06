@@ -1,0 +1,26 @@
+Bypass Authorization
+Path Traversal
+Remote File Inclusion
+CSRF
+Transmission of Information in Cleartext
+Untrusted/Invalid TLS certificate
+Command Injection
+SQL Injection
+LDAP Injection
+XSS
+XPath Injection
+HTTP Response Splitting
+Exposed Improper Error Handling
+Bad Security Design of Form Fields
+Method Tampering
+XXE
+Bad Programming of Cookies
+Hardcoded Secret
+Vulnerable Outdated Component
+Bypass Authentication
+Brute Force Attack
+Session Fixation
+Insecure scope of Cookies
+Insecure Deserialization
+Improper Output Neutralization for Logs
+SSRF

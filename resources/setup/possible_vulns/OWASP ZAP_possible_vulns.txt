@@ -1,0 +1,16 @@
+Cross Site Scripting (DOM Based)#XSS
+Cross Site Scripting (Reflected)#XSS
+User Controllable HTML Element Attribute (Potential XSS)#XSS
+User Controllable JavaScript Event (XSS)#XSS
+Path Traversal#Path Traversal
+Remote OS Command Injection#Command Injection
+SQL Injection#SQL Injection
+SQL Injection - Hypersonic SQL#SQL Injection
+SQL Injection - Oracle - Time Based#SQL Injection
+SQL Injection - SQLite#SQL Injection
+Remote File Inclusion#Remote File Inclusion
+External Redirect#Bypass Authorization
+Absence of Anti-CSRF Tokens#CSRF
+Vulnerable JS Library#Vulnerable Outdated Component
+Cookie No HttpOnly Flag#Bad Programming of Cookies
+Cookie Without Secure Flag#Bad Programming of Cookies
