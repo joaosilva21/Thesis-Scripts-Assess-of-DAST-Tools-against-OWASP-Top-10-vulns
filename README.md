@@ -43,7 +43,7 @@ Some templates regarding the excel and text files are provided for the following
 
 ## To run this project:
 Here there is a central script, that will calculate and gather the results obtained by all the tools in all types of applications. So, every task will essential start from the main script, even the later generation of latex tables and excel files. The rest of the scripts will be only used to generate latex tables or to collect the expected results of the WAVSEP Benchmark platform.
-1. expected folder
+1. expected folder <br>
    Since the WAVSEP Benchmark doesn't provide an checkmark list of the testcases, was created a script to collect this information:
    * Unzip the wavsep.zip file
    * Run the following command:
