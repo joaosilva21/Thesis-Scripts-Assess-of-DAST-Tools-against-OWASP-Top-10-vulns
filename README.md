@@ -81,7 +81,7 @@ Here there is a central script, that will calculate and gather the results obtai
      ```
 
 ## Notes important to read
-- To know more about the work conducted and how these scripts helped, read the following thesis on [ADD LINK WHEN AVAILABLE]
+- To know more about the work conducted and how these scripts helped, read the following thesis on: https://hdl.handle.net/10316/118059
 - The #template folder contains a template of how the folders, when used, should be displayed. Just unzip the template.zip file
 - The folder resources contains the folders used during the analysis conducted on the thesis
 - After generated, the "WEIGHTS.txt" file should be move to the LATEX/weights_table folder to allow the generation of latex tables for the weights used in combination of 2 tools using weights
